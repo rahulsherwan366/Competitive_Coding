@@ -3,10 +3,11 @@
 #include <iostream>
 #include <vector>
 #include <string>
+#define long long int ll
 using namespace std;
 
 
-void dfs(int s, bool visited[], vector<int>adj[],int ct)
+void dfs(int s, bool visited[], vector<int>adj[],int ct)			//funtion to implement depth first search
 {
 	if(visited[s])
 		return;
@@ -39,8 +40,6 @@ int main()
 			cin>>j;
 			while(j!=0)
 			{
-				//if(j==i)
-				//flag[j]=1;
 				adj[i].push_back(j);
 				cin>>j;
 			}
